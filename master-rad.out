@@ -2,11 +2,11 @@
 \BOOKMARK [1][-]{section.1.1}{ }{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{ }{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{ \040}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Latent Dirichlet allocation}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.1.1}{ }{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.2}{ \040 \040- \040 }{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.3}{ \040 }{section.2.1}% 9
+\BOOKMARK [1][-]{section.1.4}{ }{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{ \040}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Latent Dirichlet allocation}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.1.1}{ }{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{ \040 \040- \040 }{section.2.1}% 9
 \BOOKMARK [0][-]{chapter.3}{ }{}% 10
 \BOOKMARK [1][-]{section.3.1}{ }{chapter.3}% 11
 \BOOKMARK [2][-]{subsection.3.1.1}{ }{section.3.1}% 12
@@ -16,33 +16,59 @@
 \BOOKMARK [3][-]{subsubsection.3.1.3.2}{ \040}{subsection.3.1.3}% 16
 \BOOKMARK [3][-]{subsubsection.3.1.3.3}{ \040}{subsection.3.1.3}% 17
 \BOOKMARK [1][-]{section.3.2}{ }{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.2.1}{ \040\(. multivariate \) }{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{ \040\(. multinomial \) }{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.2}{ }{section.3.2}% 20
 \BOOKMARK [1][-]{section.3.3}{ }{chapter.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.1}{ }{section.3.3}% 22
 \BOOKMARK [1][-]{section.3.4}{ \040 }{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.4.1}{ - }{section.3.4}% 24
 \BOOKMARK [0][-]{chapter.4}{ }{}% 25
-\BOOKMARK [0][-]{chapter.5}{ \040 }{}% 26
-\BOOKMARK [1][-]{section.5.1}{ \040- }{chapter.5}% 27
-\BOOKMARK [2][-]{subsection.5.1.1}{ HTML \040 \040 }{section.5.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.2}{ \040 \040 \214 \215 . lowercase }{section.5.1}% 29
-\BOOKMARK [2][-]{subsection.5.1.3}{ \040 \040- , . tokenization}{section.5.1}% 30
-\BOOKMARK [2][-]{subsection.5.1.4}{ \040 \040. stop words}{section.5.1}% 31
-\BOOKMARK [2][-]{subsection.5.1.5}{ }{section.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.1.6}{ \040 - . stemming}{section.5.1}% 33
-\BOOKMARK [2][-]{subsection.5.1.7}{ \040 \040- . lemmitization}{section.5.1}% 34
+\BOOKMARK [1][-]{section.4.1}{ HTML \040 \040 }{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{ \040 \040 \214 \215 . lowercase }{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{ \040 \040- , . tokenization}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{ \040 \040. stop words}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.5}{ }{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.6}{ \040 - . stemming}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.7}{ \040 \040- . lemmitization}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{ \040 \040 \040}{}% 33
+\BOOKMARK [1][-]{section.5.1}{ }{chapter.5}% 34
 \BOOKMARK [1][-]{section.5.2}{ }{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.2.1}{ \040 Mallet}{section.5.2}% 36
-\BOOKMARK [2][-]{subsection.5.2.2}{Pipe \040Mallet-}{section.5.2}% 37
-\BOOKMARK [2][-]{subsection.5.2.3}{ParallelTopicModel \040Mallet-}{section.5.2}% 38
-\BOOKMARK [1][-]{section.5.3}{ }{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.3.1}{ \040 }{section.5.3}% 40
-\BOOKMARK [2][-]{subsection.5.3.2}{ \040 \040 }{section.5.3}% 41
-\BOOKMARK [0][-]{chapter.6}{ \040 \040 }{}% 42
-\BOOKMARK [1][-]{section.6.1}{ \040 \040}{chapter.6}% 43
-\BOOKMARK [0][-]{chapter.7}{}{}% 44
-\BOOKMARK [1][-]{subsection.7.0.1}{ \040 }{chapter.7}% 45
-\BOOKMARK [2][-]{subsection.7.0.2}{ \040 \040}{subsection.7.0.1}% 46
-\BOOKMARK [2][-]{subsection.7.0.3}{ \040 \040 }{subsection.7.0.1}% 47
-\BOOKMARK [0][-]{chapter.8}{ }{}% 48
+\BOOKMARK [2][-]{subsection.5.2.1}{ }{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.2}{ \040 \040 \040}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.3}{ \040 \040}{section.5.2}% 38
+\BOOKMARK [0][-]{chapter.6}{ }{}% 39
+\BOOKMARK [1][-]{section.6.1}{ \040 Mallet}{chapter.6}% 40
+\BOOKMARK [2][-]{subsection.6.1.1}{ \040Mallet-}{section.6.1}% 41
+\BOOKMARK [2][-]{subsection.6.1.2}{ \040 \040Mallet- }{section.6.1}% 42
+\BOOKMARK [1][-]{section.6.2}{ }{chapter.6}% 43
+\BOOKMARK [0][-]{chapter.7}{ \040 \040 }{}% 44
+\BOOKMARK [1][-]{section.7.1}{ \040 \040}{chapter.7}% 45
+\BOOKMARK [0][-]{chapter.8}{ }{}% 46
+\BOOKMARK [1][-]{section.8.1}{ \040 \040 \040 \040}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.2}{ \040 \040 }{chapter.8}% 48
+\BOOKMARK [2][-]{subsection.8.2.1}{ \040 }{section.8.2}% 49
+\BOOKMARK [3][-]{subsubsection.8.2.1.1}{ }{subsection.8.2.1}% 50
+\BOOKMARK [3][-]{subsubsection.8.2.1.2}{ \040 \040 \040}{subsection.8.2.1}% 51
+\BOOKMARK [2][-]{subsection.8.2.2}{ \040 }{section.8.2}% 52
+\BOOKMARK [3][-]{subsubsection.8.2.2.1}{ }{subsection.8.2.2}% 53
+\BOOKMARK [3][-]{subsubsection.8.2.2.2}{ \040 \040 \040}{subsection.8.2.2}% 54
+\BOOKMARK [2][-]{subsection.8.2.3}{ \040 }{section.8.2}% 55
+\BOOKMARK [3][-]{subsubsection.8.2.3.1}{ }{subsection.8.2.3}% 56
+\BOOKMARK [3][-]{subsubsection.8.2.3.2}{ \040 \040 \040}{subsection.8.2.3}% 57
+\BOOKMARK [2][-]{subsection.8.2.4}{ \040 \040}{section.8.2}% 58
+\BOOKMARK [3][-]{subsubsection.8.2.4.1}{ }{subsection.8.2.4}% 59
+\BOOKMARK [3][-]{subsubsection.8.2.4.2}{ \040 \040 \040}{subsection.8.2.4}% 60
+\BOOKMARK [2][-]{subsection.8.2.5}{ \040 \040 }{section.8.2}% 61
+\BOOKMARK [3][-]{subsubsection.8.2.5.1}{ }{subsection.8.2.5}% 62
+\BOOKMARK [2][-]{subsection.8.2.6}{ \040 \040 }{section.8.2}% 63
+\BOOKMARK [3][-]{subsubsection.8.2.6.1}{ }{subsection.8.2.6}% 64
+\BOOKMARK [3][-]{subsubsection.8.2.6.2}{ \040 \040 \040}{subsection.8.2.6}% 65
+\BOOKMARK [1][-]{section.8.3}{ \040 \040 \040 \040}{chapter.8}% 66
+\BOOKMARK [2][-]{subsection.8.3.1}{ }{section.8.3}% 67
+\BOOKMARK [2][-]{subsection.8.3.2}{ \040 \040 \040}{section.8.3}% 68
+\BOOKMARK [2][-]{subsection.8.3.3}{ \040 }{section.8.3}% 69
+\BOOKMARK [0][-]{chapter.9}{}{}% 70
+\BOOKMARK [1][-]{section.9.1}{}{chapter.9}% 71
+\BOOKMARK [1][-]{section.9.2}{ \040 \040}{chapter.9}% 72
+\BOOKMARK [1][-]{section.9.3}{ }{chapter.9}% 73
+\BOOKMARK [0][-]{chapter.10}{}{}% 74

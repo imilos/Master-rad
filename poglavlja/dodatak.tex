@@ -1,0 +1,135 @@
+\chapter{Додатак}
+
+\section{Предпроцесирање}
+
+\begin{lstlisting}
+
+public class PipeStem extends Pipe{
+
+	private static final long serialVersionUID = 1L;
+
+	public Instance pipe(Instance carrier) {	
+		 SnowballStemmer stemmer = new englishStemmer();
+		 TokenSequence in = (TokenSequence) carrier.getData();
+
+		 for (Token token : in) {
+		 stemmer.setCurrent(token.getText());
+		 stemmer.stem();
+		 token.setText(stemmer.getCurrent());
+		 }
+
+		 return carrier;
+		 }
+
+}
+
+\end{lstlisting}
+
+
+\begin{lstlisting}
+
+
+public class StanfordLemmatizer extends Pipe{
+
+    protected StanfordCoreNLP pipeline;
+
+    public StanfordLemmatizer() {
+         Properties props;
+         props = new Properties();
+         props.put("annotators", "tokenize, ssplit, pos, lemma");
+
+         this.pipeline = new StanfordCoreNLP(props);
+     }
+
+public Instance pipe(Instance carrier) {	
+	
+	 TokenSequence in = (TokenSequence) carrier.getData();
+
+	 for (Token token : in) {
+	 String text = lemmatize(token.getText());
+	 token.setText(text);
+	 }
+
+	 return carrier;
+	 }
+	
+    public String lemmatize(String documentText)
+    {
+        List<String> lemmas = new LinkedList<String>();
+         Annotation document = new Annotation(documentText);
+         this.pipeline.annotate(document);
+        List<CoreMap> sentences = document.get(SentencesAnnotation.class);
+        String lemmasString = "";
+        for(CoreMap sentence: sentences) {
+             for (CoreLabel token: sentence.get(TokensAnnotation.class)) {
+                  lemmasString+=token.get(LemmaAnnotation.class);
+            }
+        }
+        return lemmasString;
+    }
+
+
+   
+}
+
+
+\end{lstlisting}
+
+\section{Оптималан број тема и итерација}
+
+\begin{lstlisting}
+
+for i in `seq 100 200 2000` 
+do
+	qsub -v topic=500,iter=$i job.sub	
+done
+
+\end{lstlisting}
+
+job.sub	:
+
+\begin{lstlisting}
+
+	 java -Xms6000m -Xmx10000m -classpath "/lustre/home/jvasiljevic/TopicModeling/Mallet/class:/lustre/home/jvasiljevic/TopicModeling/Mallet/lib/mallet-deps.jar:/lustre/home/jvasiljevic/TopicModeling/Mallet/lib/jdom-1.0.jar:/lustre/home/jvasiljevic/TopicModeling/Mallet/lib/grmm-deps.jar:/lustre/home/jvasiljevic/TopicModeling/Mallet/lib/weka.jar:jaws-bin.jar:./stanford-lemmitization/stanford-corenlp-3.5.2.jar:./stanford-lemmitization/stanford-corenlp-3.5.2-models.jar:." -Dwordnet.database.dir=/usr/share/wordnet-3.0/dict/  TestFixParamKlaster ../../odgovor1.csv ../../pitanje1.csv $lambda $mi ../../Mallet/stoplists/stopwords.txt
+	 
+	 
+\end{lstlisting}
+
+
+
+
+
+\section{Мерење сличности}
+
+\begin{lstlisting}
+
+	public static double dotProd(double[] a, double[] b){
+		if(a.length != b.length){
+			throw new IllegalArgumentException("The dimensions have to be equal!");
+		}
+		double sum = 0;
+		for(int i = 0; i < a.length; i++){
+			sum += a[i] * b[i];
+		}
+		return sum;
+	}
+	public static double intensity(double[] a)
+	{
+		double sum = 0;
+	
+		for(int i = 0; i < a.length; i++){
+			sum+= a[i]*a[i];
+		}
+		
+		return Math.sqrt(sum);
+	}
+	
+
+
+	
+	public static double cosineSim(double[] broj1,double[] broj2)
+	{
+		return dotProd(broj1, broj2)/(intensity(broj1)*intensity(broj2));// *intensityOdg(broj2,broj1));
+	}
+\end{lstlisting}
+
